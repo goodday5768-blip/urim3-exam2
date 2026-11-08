@@ -17,14 +17,18 @@
 .gc{display:block;text-decoration:none;color:#fff;border-radius:20px;padding:20px;box-shadow:0 8px 20px rgba(10,60,60,.2)}.gc b{display:block;font-size:26px;line-height:1.25}.gc span{font-size:16px;font-weight:600}
 .res{display:flex;align-items:center;gap:10px;background:#fff;border-radius:16px;padding:14px 16px;margin:0 0 14px;font-weight:800;text-decoration:none;color:inherit}.res em{margin-left:auto;font-style:normal;color:var(--h1)}
 .top{position:sticky;top:0;z-index:5;background:linear-gradient(120deg,var(--h1),var(--h2));color:#fff;display:flex;align-items:center;gap:10px;padding:9px 12px}.top b{font-size:20px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.bk{background:rgba(255,255,255,.22);color:#fff;font-size:16px;padding:7px 12px;border-radius:11px;text-decoration:none;font-weight:800}.pn{font-size:15px;font-weight:700}
-.tip{font-size:15.5px;color:var(--mute);padding:8px 14px 0}
-.pg{background:#fff;margin:8px 6px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(10,60,60,.16)}.pg img{display:block;width:100%;height:100%}
+.top{display:block;padding:0}.tr{display:flex;align-items:center;gap:10px;padding:9px 12px}.tr b{font-size:20px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chips{display:flex;gap:7px;overflow-x:auto;padding:0 12px 10px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}.chips a{flex:none;font-size:15.5px;font-weight:800;cursor:pointer;color:#fff;background:rgba(255,255,255,.22);border-radius:999px;padding:5px 13px;white-space:nowrap}
+main{padding:12px 8px 60px}article{background:#fff;border-radius:20px;margin:0 0 26px;overflow:hidden;box-shadow:0 8px 24px rgba(10,60,60,.16);scroll-margin-top:106px}
+.ah{background:linear-gradient(120deg,var(--h1),var(--h2));color:#fff;padding:14px 18px}.lb{display:inline-block;background:rgba(255,255,255,.25);font-size:17px;font-weight:900;border-radius:9px;padding:2px 12px;margin-bottom:6px}.ah .k{font-size:23px;font-weight:900;line-height:1.35}.ah .e{font-size:17px;opacity:.96;line-height:1.4;margin-top:2px}
+.sm{background:#fff6d8;border-bottom:3px solid #ffc53d;padding:13px 18px;font-size:20px;font-weight:700;line-height:1.55;color:#4a3500}.sm span{display:inline-block;background:#e8590c;color:#fff;font-size:15px;font-weight:900;border-radius:999px;padding:2px 12px;margin-right:8px;vertical-align:2px}
+.pg{background:#fff;position:relative}.pg:before{content:'불러오는 중…';position:absolute;left:18px;top:14px;color:#8aa39b;font-size:16px}.pg img{display:block;position:relative;width:100%;height:100%;background:#fff}.pg img:not([src]){opacity:0}
 </style>
 <!--LEESS-GATE2--><script src="/leess/roster.js"></script><script src="/leess/gate.js"></script></head>
 <body>
 <div id="app"></div>
 <script>
-const D = {"title": "우림중 3학년 2학기 2차고사 시험", "school": "우림중 3학년", "short": "지문분석 아잉카", "sub": "시험 범위 16쪽 · 범위별 한 번에 보기", "notice": "이 앱의 접속·시험 시작·채점 결과(이름, 범위, 점수, 틀린 유형, 기기 식별값)는 담당 선생님께 자동으로 전송됩니다.", "salt": "urim3-2026-2-2", "reportUrl": "https://script.google.com/macros/s/AKfycbyKGf4h-cdSKteg8QPTjZTvUVsbowp4S0WvaRuyzjFq4Xwm1nc9mOKl70P0tqKzyOKm/exec", "book": "", "enc": "DW8d3XQ+un/R1mheqk3uZm2pyvCrZQMaKUFEwO88QBe6gahUxf1Vyl1X0fKYKEJQmHNXj39sFxT5hCb80xnn0jDhgfjTDaOjAo6hnCIsT4aBKnQW6rEdSA6dVsO7psLbKTGBhS6RtT0eFgfXGcEax+nyFVhu", "groups": []};
+const D = {"title": "우림중 3학년 2학기 2차고사 시험", "school": "우림중 3학년", "short": "지문분석 아잉카", "sub": "시험 범위 14지문 · 범위별 한 번에 보기", "notice": "이 앱의 접속·시험 시작·채점 결과(이름, 범위, 점수, 틀린 유형, 기기 식별값)는 담당 선생님께 자동으로 전송됩니다.", "salt": "urim3-2026-2-2", "reportUrl": "https://script.google.com/macros/s/AKfycbyKGf4h-cdSKteg8QPTjZTvUVsbowp4S0WvaRuyzjFq4Xwm1nc9mOKl70P0tqKzyOKm/exec", "book": "", "enc": "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", "groups": []};
 /* 콘텐츠 보호(2026-10-06) — 공용 조각(examapp/unlock.js). 빌더(content_crypt.inject)가 각 틀의 UNLOCK 표식 자리에 넣는다.
    D.enc = base64(iv + AES-256-GCM(gzip JSON)). 열쇠(16진수 64자)는 서버 start 응답 g.key 또는 이 기기에 저장된 값.
    UNLOCK.run(D, g, st[, target]): {ok:true, key}면 풀린 내용이 target(기본 D)에 합쳐진 뒤, {ok:false, msg}면 msg를 학생에게 보인다.
@@ -98,14 +102,25 @@ const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&': '&amp
 const HUE = [['#0e7c66', '#3fd1bd'], ['#2374e1', '#5fa8ff'], ['#8a2be2', '#c77dff'], ['#e0417c', '#ff7aa8'], ['#ef7d00', '#ffb347'], ['#2b9348', '#6fcf7f']];
 function renderHome() {
   window.scrollTo(0, 0);
-  const cards = D.groups.map((g, i) => { const h = HUE[i % HUE.length]; return `<a class="gc" href="#g${i}" style="background:linear-gradient(130deg,${h[0]},${h[1]})"><b>${esc(g.name)}</b><span>${g.n}쪽 한 번에 보기</span></a>`; }).join('');
+  const cards = D.groups.map((g, i) => { const h = HUE[i % HUE.length]; return `<a class="gc" href="#g${i}" style="background:linear-gradient(130deg,${h[0]},${h[1]})"><b>${esc(g.name)}</b><span>${g.pages.length}지문 한 번에 보기</span></a>`; }).join('');
   $('#app').innerHTML = `<div class="hero"><small>${esc(D.school)}</small><h1>지문분석 아잉카</h1><p>${esc(D.sub)}</p></div><div class="home">${D.book ? `<a class="res" href="${esc(D.book)}">📘 시험대비 교재 보기<em>›</em></a>` : ''}<div class="hh">범위를 고르세요</div><div class="gg">${cards}</div></div>`;
 }
 function renderGroup(i) {
   const g = D.groups[i]; if (!g) return renderHome();
-  const pages = []; for (let k = 0; k < g.n; k++) pages.push(`<div class="pg" style="aspect-ratio:${g.ratio}"><img data-enc="ainca/${String(g.from + k).padStart(3, '0')}.bin" alt="${k + 1}쪽"></div>`);
-  $('#app').innerHTML = `<div class="top"><a class="bk" href="#">‹ 목차</a><b>${esc(g.name)}</b><span class="pn">${g.n}쪽</span></div><p class="tip">글씨가 작으면 휴대폰을 가로로 돌리거나 두 손가락으로 확대하세요.</p>${pages.join('')}`;
-  window.scrollTo(0, 0); UNLOCK.lazy($('#app'), IMGKEY);
+  const h = HUE[i % HUE.length]; document.documentElement.style.setProperty('--h1', h[0]); document.documentElement.style.setProperty('--h2', h[1]);
+  const pages = g.pages.map((p, k) => `<article id="a${k}"><div class="ah"><span class="lb">${esc(p.lab || k + 1)}</span>${p.ko ? `<div class="k">${esc(p.ko)}</div>` : ''}${p.en ? `<div class="e">${esc(p.en)}</div>` : ''}</div>${p.sum ? `<div class="sm"><span>SUMMARY</span>${esc(p.sum)}</div>` : ''}<div class="pg" style="aspect-ratio:${p.r}"><img data-enc="ainca/${String(g.from + k).padStart(3, '0')}.bin" alt="${k + 1}번째 지문"></div></article>`);
+  $('#app').innerHTML = `<div class="top"><div class="tr"><a class="bk" href="#">‹ 목차</a><b>${esc(g.name)}</b><span class="pn">${g.pages.length}지문</span></div><div class="chips">${g.pages.map((p, k) => `<a data-k="${k}">${esc(chip(p, k))}</a>`).join('')}</div></div><main>${pages.join('')}</main>`;
+  document.querySelector('.chips').onclick = e => { const a = e.target.closest('[data-k]'); if (a) { document.getElementById('a' + a.dataset.k).scrollIntoView(); } };
+  window.scrollTo(0, 0); UNLOCK.lazy($('#app'), IMGKEY); saveMem();
+}
+function chip(p, k) { const m = String(p.lab || '').match(/^(\S+(?:\s\d+)?)/); return m ? m[1] : k + 1; }
+let memIO = null;
+function saveMem() {   /* 큰 그림이라 화면에서 멀어진 쪽은 메모리에서 내렸다가 가까워지면 다시 넣는다(아이패드에서 한 범위 27쪽을 계속 내려도 안 튕기게) */
+  if (memIO) memIO.disconnect();
+  memIO = new IntersectionObserver(es => es.forEach(e => { const im = e.target;
+    if (e.isIntersecting) { if (im.dataset.u && !im.getAttribute('src')) im.src = im.dataset.u; }
+    else if (im.getAttribute('src')) { im.dataset.u = im.src; im.removeAttribute('src'); } }), {rootMargin: '2500px 0px'});
+  document.querySelectorAll('.pg img').forEach(im => memIO.observe(im));
 }
 function route() { const m = location.hash.match(/^#g(\d+)$/); if (m) renderGroup(+m[1]); else renderHome(); }
 function renderBook() { window.addEventListener('hashchange', route); route(); }
