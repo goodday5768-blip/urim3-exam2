@@ -7,24 +7,36 @@
 <title>우림중 3학년 지문분석 아잉카</title>
 <style>
 :root{--bg:#f8f7f3;--ink:#2a2838;--mute:#6f6d82;--line:#e8e6ef;--h1:#dff0ea;--h2:#e9f6f2;--ht:#22695e;--ng:#b5534a}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.6 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;word-break:keep-all}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:calc(18px*var(--fz,1))/1.6 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;word-break:keep-all}
 #app{max-width:1200px;margin:0 auto}
-.lock{padding:26px 16px;max-width:520px;margin:0 auto}.lock h1{font-size:25px;margin:6px 0;color:var(--ht)}.sub{color:var(--mute);font-size:16px;margin:0 0 14px}
+.lock{padding:26px 16px;max-width:520px;margin:0 auto}.lock h1{font-size:calc(25px*var(--fz,1));margin:6px 0;color:var(--ht)}.sub{color:var(--mute);font-size:calc(16px*var(--fz,1));margin:0 0 14px}
 .note{background:#fff;border-radius:18px;padding:18px;box-shadow:0 4px 16px rgba(70,60,120,.08)}
 .btn{font:inherit;font-weight:800;border:0;background:#fff;color:var(--ink);border-radius:12px;padding:9px 14px;cursor:pointer}.pri{background:linear-gradient(120deg,var(--h1),var(--h2));color:var(--ht)}
-.hero{background:linear-gradient(125deg,#d9f0ea,#dce9f9 65%,#ece0f7);color:#2c4a5e;padding:30px 20px 26px;border-radius:0 0 26px 26px}.hero small{font-size:16px;font-weight:700}.hero h1{font-size:31px;line-height:1.25;margin:4px 0 8px}.hero p{margin:0;font-size:16.5px}
-.home{padding:18px 14px 50px}.hh{font-size:20px;font-weight:900;margin:8px 4px 12px}.gg{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
-.gc{display:block;text-decoration:none;border-radius:20px;padding:20px;box-shadow:0 4px 12px rgba(70,60,120,.09)}.gc b{display:block;font-size:26px;line-height:1.25}.gc span{font-size:16px;font-weight:600}
+.hero{background:linear-gradient(125deg,#d9f0ea,#dce9f9 65%,#ece0f7);color:#2c4a5e;padding:30px 20px 26px;border-radius:0 0 26px 26px}.hero small{font-size:calc(16px*var(--fz,1));font-weight:700}.hero h1{font-size:calc(31px*var(--fz,1));line-height:1.25;margin:4px 0 8px}.hero p{margin:0;font-size:calc(16.5px*var(--fz,1))}
+.home{padding:18px 14px 50px}.hh{font-size:calc(20px*var(--fz,1));font-weight:900;margin:8px 4px 12px}.gg{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.gc{display:block;text-decoration:none;border-radius:20px;padding:20px;box-shadow:0 4px 12px rgba(70,60,120,.09)}.gc b{display:block;font-size:calc(26px*var(--fz,1));line-height:1.25}.gc span{font-size:calc(16px*var(--fz,1));font-weight:600}
 .res{display:flex;align-items:center;gap:10px;background:#fff;border-radius:16px;padding:14px 16px;margin:0 0 14px;font-weight:800;text-decoration:none;color:inherit}.res em{margin-left:auto;font-style:normal;color:var(--ht)}
-.top{position:sticky;top:0;z-index:5;background:linear-gradient(120deg,var(--h1),var(--h2));color:var(--ht);box-shadow:0 2px 8px rgba(70,60,120,.10);display:flex;align-items:center;gap:10px;padding:9px 12px}.top b{font-size:20px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.bk{background:rgba(255,255,255,.7);color:var(--ht);font-size:16px;padding:7px 12px;border-radius:11px;text-decoration:none;font-weight:800}.pn{font-size:15px;font-weight:700}
-.top{display:block;padding:0}.tr{display:flex;align-items:center;gap:10px;padding:9px 12px}.tr b{font-size:20px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.chips{display:flex;gap:7px;overflow-x:auto;padding:0 12px 10px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}.chips a{flex:none;font-size:15.5px;font-weight:800;cursor:pointer;color:var(--ht);background:rgba(255,255,255,.6);border-radius:999px;padding:5px 13px;white-space:nowrap}
+.top{position:sticky;top:0;z-index:5;background:linear-gradient(120deg,var(--h1),var(--h2));color:var(--ht);box-shadow:0 2px 8px rgba(70,60,120,.10);display:flex;align-items:center;gap:10px;padding:9px 12px}.top b{font-size:calc(20px*var(--fz,1));flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.bk{background:rgba(255,255,255,.7);color:var(--ht);font-size:calc(16px*var(--fz,1));padding:7px 12px;border-radius:11px;text-decoration:none;font-weight:800}.pn{font-size:calc(15px*var(--fz,1));font-weight:700}
+.top{display:block;padding:0}.tr{display:flex;align-items:center;gap:10px;padding:9px 12px}.tr b{font-size:calc(20px*var(--fz,1));flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chips{display:flex;gap:7px;overflow-x:auto;padding:0 12px 10px;scrollbar-width:none}.chips::-webkit-scrollbar{display:none}.chips a{flex:none;font-size:calc(15.5px*var(--fz,1));font-weight:800;cursor:pointer;color:var(--ht);background:rgba(255,255,255,.6);border-radius:999px;padding:5px 13px;white-space:nowrap}
 main{padding:12px 8px 60px}article{background:#fff;border-radius:20px;margin:0 0 26px;overflow:hidden;box-shadow:0 4px 16px rgba(70,60,120,.08);scroll-margin-top:106px}
-.ah{background:linear-gradient(120deg,var(--h1),var(--h2));color:var(--ht);padding:14px 18px}.lb{display:inline-block;background:rgba(255,255,255,.7);font-size:17px;font-weight:900;border-radius:9px;padding:2px 12px;margin-bottom:6px}.ah .k{font-size:23px;font-weight:900;line-height:1.35}.ah .e{font-size:17px;opacity:.96;line-height:1.4;margin-top:2px}
-.sm{background:#fff9e8;border-bottom:2px solid #f3e0ae;padding:13px 18px;font-size:20px;font-weight:700;line-height:1.55;color:#5a4a1c}.sm span{display:inline-block;background:#fae0c8;color:#8a5020;font-size:15px;font-weight:900;border-radius:999px;padding:2px 12px;margin-right:8px;vertical-align:2px}
-.pg{background:#fff;position:relative}.pg:before{content:'불러오는 중…';position:absolute;left:18px;top:14px;color:#8aa39b;font-size:16px}.pg img{display:block;position:relative;width:100%;height:100%;background:#fff}.pg img:not([src]){opacity:0}
+.ah{background:linear-gradient(120deg,var(--h1),var(--h2));color:var(--ht);padding:14px 18px}.lb{display:inline-block;background:rgba(255,255,255,.7);font-size:calc(17px*var(--fz,1));font-weight:900;border-radius:9px;padding:2px 12px;margin-bottom:6px}.ah .k{font-size:calc(23px*var(--fz,1));font-weight:900;line-height:1.35}.ah .e{font-size:calc(17px*var(--fz,1));opacity:.96;line-height:1.4;margin-top:2px}
+.sm{background:#fff9e8;border-bottom:2px solid #f3e0ae;padding:13px 18px;font-size:calc(20px*var(--fz,1));font-weight:700;line-height:1.55;color:#5a4a1c}.sm span{display:inline-block;background:#fae0c8;color:#8a5020;font-size:calc(15px*var(--fz,1));font-weight:900;border-radius:999px;padding:2px 12px;margin-right:8px;vertical-align:2px}
+.pg{background:#fff;position:relative}.pg:before{content:'불러오는 중…';position:absolute;left:18px;top:14px;color:#8aa39b;font-size:calc(16px*var(--fz,1))}.pg img{display:block;position:relative;width:100%;height:100%;background:#fff}.pg img:not([src]){opacity:0}
 </style>
-<!--LEESS-GATE2--><script src="/leess/roster.js"></script><script src="/leess/gate.js"></script></head>
+<!--LEESS-GATE2--><script src="/leess/roster.js"></script><script src="/leess/gate.js"></script><style id="ipadCss">
+/* 아이패드 기준 화면(2026-11-09) — 폭 740px 이상(아이패드 세로·가로, 컴퓨터)에서 본문 폭을 넓히고 글자를 키운다. 휴대폰은 그대로. */
+@media (min-width:740px) and (min-height:560px){
+:root{--fz:1.06}
+
+.wrap{padding-left:26px!important;padding-right:26px!important}
+.brand img{max-width:640px!important}
+input[type=radio],input[type=checkbox]{width:19px;height:19px}
+.lock,.gate{max-width:600px!important}
+#pwaSheet .pwa-box{max-width:620px!important}
+}
+</style>
+</head>
 <body>
 <div id="app"></div>
 <script>
@@ -160,7 +172,7 @@ function renderLocked() {
   $('#app').innerHTML = `<div class="lock"><h1>${esc(D.school)} ${esc(D.short)}</h1><p class="sub">${esc(D.sub)}</p>
   <div class="note"><b>교재 열기</b><p style="margin:6px 0 10px">본인 이름(실명)을 쓰고 「교재 열기」를 누르세요. 처음 쓰는 기기는 인터넷 연결이 필요합니다. ${esc(D.notice)}</p>
   <input type="text" id="name" placeholder="이름 (필수)" autocomplete="off" value="${esc(saved)}" style="width:100%;font:inherit;padding:9px 11px;border:1px solid var(--line);border-radius:9px;background:var(--card);color:var(--ink)">
-  <p id="msg" style="color:var(--ng);font-size:14px;min-height:1.4em;margin:8px 0"></p>
+  <p id="msg" style="color:var(--ng);font-size:calc(14px*var(--fz,1));min-height:1.4em;margin:8px 0"></p>
   <button class="btn pri" id="openWb" style="width:100%;padding:10px">교재 열기</button></div></div>`;
   $('#openWb').onclick = openWb;
 }
